@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_bbc">
+
+    <fragment
+        android:id="@+id/nav_bbc"
+        android:name="com.example.newsappitsumaircode.ui.bbc.BbcFragment"
+        android:label="BBC"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_aljazera"
+        android:name="com.example.newsappitsumaircode.ui.aljazeera.AljazeeraFragment"
+        android:label="ALJAZERA"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_cnn"
+        android:name="com.example.newsappitsumaircode.ui.cnn.CnnFragment"
+        android:label="CNN"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_fox"
+        android:name="com.example.newsappitsumaircode.fragments.FoxNewsFragment"
+        android:label="FOX News"
+        tools:layout="@layout/fragment_fox_news" />
+    <fragment
+        android:id="@+id/nav_skynews"
+        android:name="com.example.newsappitsumaircode.fragments.SkyNewsFragment"
+        android:label="SKY News"
+        tools:layout="@layout/fragment_sky_news" />
+    <fragment
+        android:id="@+id/nav_newYorkTimes"
+        android:name="com.example.newsappitsumaircode.fragments.NewYorkTimesNewsFragment"
+        android:label="New York Times"
+        tools:layout="@layout/fragment_new_york_times_news" />
+</navigation>
